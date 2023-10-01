@@ -1,19 +1,19 @@
 clear all
 clc 
 canti=100;
-estr=8; %número de estrategias que creemos
+estr=8; %nÃºmero de estrategias que creemos
 implay('intro.mp4')
-D=input('Número total de jugadores que van a participar= ');
+D=input('NÃºmero total de jugadores que van a participar= ');
 while D<=1|D>5
-    disp('Número no válido.')
+    disp('NÃºmero no vÃ¡lido.')
     if D>4
-        disp('El número total de participantes no puede ser mayor que 5')
+        disp('El nÃºmero total de participantes no puede ser mayor que 5')
     end
-    D=input('Número total de jugadores que van a participar= ');
+    D=input('NÃºmero total de jugadores que van a participar= ');
 end
 N=input('Jugadores reales que van a participar= ');
 while N>D
-    disp('Número no válido.')
+    disp('NÃºmero no vÃ¡lido.')
     N=input('Jugadores reales que van a participar= ');
 end
 w=zeros(1,D);
@@ -47,65 +47,9 @@ for k=2:M
     end
 end
 end
-xd(1)="Donald Trump decide declararle la guerra a Albacete.";
-xd(2)="En respuesta a los ataques recibidos, Coca-Cola decide fabricar su propia bomba de hidrógeno.";
-xd(3)="España decide utilizar las ingentes cantidades de queso fabricadas a lo largo de 2 años como escudo antimisiles.";
-xd(4)="Rusia negocia con China la compra de población infectada con coronavirus como arma biológica.";
-xd(5)="La Atlántida entra a la guerra y se posicina a favor de los terraplanistas.";
-xd(6)="Descontento en Alemania por no ser los causantes de la guerra.";
-xd(7)="El desafortunado comunicado de Francia <<no hay huevos>> provoca la entrada de España en la guerra con la declaración de <<Portugal, sujétame el cubata que voy>>.";
-xd(8)="La OMS recomienda ignorar sus advertencias alimenticias y disfrutar de lo poco que le queda de vida a la humanidad.";
-xd(9)="Bin Laden entra de forma póstuma en la quiniela del Premio Nobel de la Paz";
-xd(10)="Santiago Abascal y otros líderes de Vox aprovechan el estallido de la guerra para invadir el peñón de Gibraltar.";
-xd(11)="Francia recluta al virus del resfriado común para contrarrestar el peso del coronavirus chino.";
-xd(12)="Suiza se ofrece para guardar las reservas mundiales de oro alegando que <<luego lloraréis si se os pierden>>.";
-xd(13)="China anuncia que sólo utilizará la mitad de sus soldados los primeros dos años de guerra para darle un poco de ventaja al resto.";
-xd(14)="Gooooogle se ve obligado a ceder algunas de su <<o>> por el racionamiento de la guerra.";
-xd(15)="Mathworks es clausurado por la creación de un programa que simula la toma de decisiones de países en la guerra.";
-xd(16)="España decide comenzar otra guerra civil como excusa para no entrar en la guerra mundial.";
-xd(17)="Pedro Sánchez dice: <<La guerra no toca en esta legislatura...>>.";
-xd(18)="El favorito para ganar la nueva modalidad de tiro de bomba atómica en los Juegos Olímpicos es el competidor de Corea del Norte.";
-xd(19)="La población de Dubái dice notar la escasez propia de la guerra: <<Ya hace como 2 horas que no como langosta porque apenas me queda dinero para la gasolina del yate.>>";
-xd(20)="El neodarwinismo se encuentra contrariado ante la aparición de una nueva especie al aparearse un confuso pez con un torpedo: <<A ver si al final va a ser mentira lo de la evolución...>>.";
-xd(21)="Expertos predicen la inminente derrota de los terraplanistas, ya que según sus creencias los GPS son imposibles y se niegan a utilizarlos.";
-xd(22)="Sarah Connor muere por el coronavirus, <<Ya es definitivo, las máquinas van a ganar.>> sentencia el secretario general de la ONU.";
-xd(23)="Efectos de la guerra en Australia: manifestaciones por parte de los koalas por el racionamiento del eucalipto.";
-xd(24)="Numerosos intentos de soborno a los guionistas de Los Simpson por la creencia popular de que los episodios de la serie condicionarán el resultado de la guerra.";
-xd(25)="Las bajas estadounidenses se multiplican por el uso indiscriminado de la homeopatía como cura de los miembros amputados ante el lema <<eso crece echándole agua>>.";
-xd(26)="El ejército español anuncia la elección de <<ESTEFANÍAAAAAAAAAAA>> como grito de guerra.";
-xd(27)="Iker Jiménez se queja ante el ejército illuminati formado por reptilianos: <<Si a mí no me dejan utilizar fantasmas, ellos no deberían poder usar ovnis.>>";
-xd(28)="Jordi Hurtado es nombrado consejero del ministro de Defensa por su éxito en las campañas del territorio Ibérico durante las Guerras Púnicas.";
-xd(29)="Los recortes de la guerra provocan que la India venda 15000 de sus dioses, ahora sólo les quedan 40000 a los que rezar.";
-xd(30)="Italia renuncia al uso del 0 y recupera los números romanos ante la subida del precio de los números árabes.";
-xd(31)="Duras declaraciones por parte de la comunidad morse: <<.--- --- ... . / .- .--. .-. ..- . -... .- -. --- ... .-.-.>>.";
-xd(32)="La decisión de los ingenieros de aproximar el número <<e>> a 3 para aligerar tiempos de producción provoca la creación de tanques defectuosos.";
-xd(33)="La comunidad científica reconoce que <<pi>> siempre ha sido exactamente 3, ya que consideran que con la guerra ya no están para tonterías como calcular decimales.";
-xd(34)="China ejecuta la orden 66 y todos los propietarios de bazares chinos atacan los supermercados tradicionales.";
-xd(35)="Estados Unidos no termina de decidir su posición respecto a Alemania por temor a una bronca de <<la Merkel>>.";
-xd(36)="Grecia, ante su inevitable derrota, envía 300 soldados semidesnudos hacia las Termópilas porque <<esta vez no conseguirán rodearnos>>.";
-xd(37)="<<Ojalá contar con más presupuesto para ayudar a los heridos...>> declaraba con aflicción el Papa bajando la ventanilla de su ferrari esta mañana.";
-xd(38)="El ejército español ha concluido que aquellos soldados con experiencia en Glovo no necesitarán superar las pruebas físicas: <<Tanto correr al final sirvió de algo.>>. ";
-xd(39)="Los soldados españoles reciben clases por parte de Albert Rivera para aprender a desaparecer de un momento a otro con el uso de la frase <<¿Oyen eso?, es el silencio...>>.";
-xd(40)="Ante la escasez de misiles España comienza a emplear adoquines catalanes como arma arrojadiza.";
-xd(41)="Los soldados de la guardia suiza se pasean con mecheros en alto por orden de la Iglesia en un intento de quemar el wifi y evitar así la divulgación de ideas herejes.";
-xd(42)="Maduro anuncia que, a causa de la guerra y para recortar gastos, en las próximas elecciones sólo habrá una urna, la cual estará en su casa y será de uso propio.";
-xd(43)="Atenas proclama que lo de la democracia era un experimento social, <<a ver qué pasaba>>, pero que han llegado a la conclusión de que no funciona.";
-xd(44)="LA ONU denuncia que el CERN es en realidad una máquina para crear bombas de antimateria y suplica <<Otro proyecto Manhattan NO, por favor.>>.";
-xd(45)="Surge una nueva rama dentro de los terraplanistas que niega la existencia de la física cuántica y asegura que <<Eso no se lo creen ni ellos, ahí están tramando algo.>>.";
-xd(46)="La nueva coalición entre terraplanistas, homeópatas, antivacunas, reptilianos y zurdos hace una demostración de su poder destapando que el movimiento vegetariano comenzó por alérgicos cárnicos negacionistas.";
-xd(47)="Donald Trump, <<Padre de Muros>>, <<el que no tributa>>, reclama el Trono de Hierro.";
-xd(48)="Superman recibe numerosas propuestas de reclutamiento por parte de diferentes países tras darse de baja de la Liga de la justicia.";
-xd(49)="Belén Esteban, nombrada comandante suprema del Ejército de España por petición popular.";
-xd(50)="La pérdida de vegetación por culpa de las explosiones provoca que los veganos comiencen a filtrar el aire, mientras perfeccionan la fotosíntesis.";
-xd(51)="El alcalde Almedida confiesa que mantuvo la contaminación en Madrid para inmunizar a los habitantes en caso del uso de gas mostaza del enemigo.";
-xd(52)="El gobierno recomienda urgar en los sofás para paliar la crisis económica con <<los centimillos pérdidos entre los cojines.>>.";
-xd(53)="Greta Thunberg pillada cazando osos polares con un abrigo de zorro ártico usando el lema de <<En la guerra todo vale.>>.";
-xd(54)="Google prevé un ciberataque a Mathwrks&%/(/&%$·$·(%%&!";
-xd(55)="Iberdrola avisa de que a partir de ahora el Sol saldrá más tarde para ahorrar luz.";
-xd(56)="Irlanda centra sus esfuerzos en encontrar el caldero de oro al final del arcoiris par paliar la escasez económica";
-A=numel(xd); %número de frases
+
 for kl=1:N
-      disp('Para introducir el nombre que queráis tener debéis entrecomillarlo (")')
+      disp('Para introducir el nombre que querÃ¡is tener debÃ©is entrecomillarlo (")')
       k=['Nombre del jugador ',num2str(kl),': '];
       ju=input(k);
       jug(kl)=ju;
@@ -114,7 +58,7 @@ end
   if N~=D 
   for kl=1:M
      if c(kl)==1
-         k="España";
+         k="EspaÃ±a";
      end
      if c(kl)==2
          k="Estados Unidos";
@@ -129,7 +73,7 @@ end
          k="China";
      end
      if c(kl)==6
-         k="Sudáfrica";
+         k="SudÃ¡frica";
      end
      if c(kl)==7
          k="Venezuela";
@@ -141,12 +85,12 @@ end
      disp([klk,' te ha declarado la guerra.'])
      jug(N+kl)=k;
  end
-     j=input('Pulsa cualquier número para comenzar el juego. ');
+     j=input('Pulsa cualquier nÃºmero para comenzar el juego. ');
      clc
   end
 %comienza el juego
 while sum(sum(n))~=10*D&cant>0
- %primera decisión
+ %primera decisiÃ³n
 if sum(sum(n))==0
 clc
  for k=1:N
@@ -161,7 +105,7 @@ disp('1- Equitativamente.')
 disp('2- 60% para ti.')
 disp('3- 80% para ti.')
 end
-i=input('Opción escogida: ');
+i=input('OpciÃ³n escogida: ');
 f(k)=i;
 n(k,i)=n(k,i)+1;
 clc
@@ -195,7 +139,7 @@ clc
      end
  end
 end
-%ya está hecho el reparto inicial, comienza el juego
+%ya estÃ¡ hecho el reparto inicial, comienza el juego
 clc
  for k=1:N %para las personas reales
     %frases
@@ -206,7 +150,7 @@ clc
     disp(['Ronda ', num2str(R+1)])
     disp(['Turno de ',num2str(jug(k))])
     o=ceil(rand*A);
-    disp('Últimas noticias:')
+    disp('Ãšltimas noticias:')
     if numel(num2str(xd(o)))>s
     xo=num2str(xd(o));
      while xo(s)~=' '
@@ -219,47 +163,47 @@ clc
     else
     disp(xd(o)) 
     end
-  j=input('Pulsa cualquier número para que comience la ronda. ');
+  j=input('Pulsa cualquier nÃºmero para que comience la ronda. ');
   clc
 %fin de las frases
 if D==2
-    disp('Comodín 1: ver la cantidad de monedas de ambos.')
+    disp('ComodÃ­n 1: ver la cantidad de monedas de ambos.')
 else
-    disp('Comodín 1: ver la cantidad de monedas que alguien tiene.')
+    disp('ComodÃ­n 1: ver la cantidad de monedas que alguien tiene.')
 end
-    disp('Comodín 2: intercambiar la cantidad de monedas.')
-    disp('Comodín 3: ver la última decisión de uno de tus oponentes.')
-    disp('Comodín 4: la única decisión llevada a cabo será la tuya.')
-    disp('¿Quieres algún comodín?')
+    disp('ComodÃ­n 2: intercambiar la cantidad de monedas.')
+    disp('ComodÃ­n 3: ver la Ãºltima decisiÃ³n de uno de tus oponentes.')
+    disp('ComodÃ­n 4: la Ãºnica decisiÃ³n llevada a cabo serÃ¡ la tuya.')
+    disp('Â¿Quieres algÃºn comodÃ­n?')
     g=input('Si quieres usar alguno, pulsa 1, si no pulsa 0: ');
     while g~=1&g~=0
-        disp('Ese número no es válido.')
+        disp('Ese nÃºmero no es vÃ¡lido.')
         g=input('Si quieres usar alguno, pulsa 1, si no pulsa 0: ');
     end
     if g==1
-       h=input('Comodín número ');
+       h=input('ComodÃ­n nÃºmero ');
        while h~=1&h~=2&h~=3&h~=4
-            disp('Ese número no es válido.')
-            h=input('Comodín número ');
+            disp('Ese nÃºmero no es vÃ¡lido.')
+            h=input('ComodÃ­n nÃºmero ');
        end
        while hd(k,h)~=0&h~5
-            disp('Ya habías usado ese comodín.')
-            disp('Si ya no quieres ningún comodín, pulsa 0:')
-            h=input('Comodín número ');
+            disp('Ya habÃ­as usado ese comodÃ­n.')
+            disp('Si ya no quieres ningÃºn comodÃ­n, pulsa 0:')
+            h=input('ComodÃ­n nÃºmero ');
             if h==0
                 h=5;
             end
             while h~=1&h~=2&h~=3&h~=4&h~=5
-            disp('Ese número no es válido.')
-            h=input('Comodín número ');
+            disp('Ese nÃºmero no es vÃ¡lido.')
+            h=input('ComodÃ­n nÃºmero ');
             end
        end
        while w~=0&h==4
-           disp('Comodín no disponible.')
-           h=input('Comodín número ');
+           disp('ComodÃ­n no disponible.')
+           h=input('ComodÃ­n nÃºmero ');
             while h~=1&h~=2&h~=3&h~=4&h~=0
-            disp('Ese número no es válido.')
-            h=input('Comodín número ');
+            disp('Ese nÃºmero no es vÃ¡lido.')
+            h=input('ComodÃ­n nÃºmero ');
             end
        end
        end
@@ -275,7 +219,7 @@ end
                else
              nombres=[linspace(1,D,D)',jug'];  
              disp (nombres)
-             i=input('Escoge de qué jugador: ');
+             i=input('Escoge de quÃ© jugador: ');
              cfg=cant(i);
              disp(cfg)
                end
@@ -284,7 +228,7 @@ end
               if D~=2
              nombres=[linspace(1,D,D)',jug']; 
              disp (nombres)
-             i=input('Escoge con qué jugador lo quieres intercambiar: ');
+             i=input('Escoge con quÃ© jugador lo quieres intercambiar: ');
                  else
                  if k==1
                     i=2;
@@ -306,43 +250,43 @@ end
             else
               nombres=[linspace(1,D,D)',jug']; 
              disp (nombres)
-             i=input('Escoge de qué jugador: ');
+             i=input('Escoge de quÃ© jugador: ');
             end
              if f(i)==1
                  r='no hacer nada.';
             end
             if f(i)==2
-                r='quitarte 5 monedas sin llevarsélas.';
+                r='quitarte 5 monedas sin llevarsÃ©las.';
             end
             if f(i)==3
                 r='quitarte 10 monedas.';
             end
-        disp(['La última decisión de ',num2str(jug(i)),' fue ', r])
+        disp(['La Ãºltima decisiÃ³n de ',num2str(jug(i)),' fue ', r])
         end 
         if h==4 %comodin 4
         w(k)=1;
         end
        end
-        l=input('Cuando quieras continuar pulsa cualquier número: ');
+        l=input('Cuando quieras continuar pulsa cualquier nÃºmero: ');
     clc
     disp([num2str(jug(k)),': '])
     disp('1- No hacer nada.')
-    disp('2- Quitarle 5 monedas a cada oponente, pero no te las llevas tú.')
-    disp('3- Quitarle 10 monedas a cada oponente y llevarte tú 10.')
-    f(k)=input('Opción escogida: ');
+    disp('2- Quitarle 5 monedas a cada oponente, pero no te las llevas tÃº.')
+    disp('3- Quitarle 10 monedas a cada oponente y llevarte tÃº 10.')
+    f(k)=input('OpciÃ³n escogida: ');
     while f(k)~=1&f(k)~=2&f(k)~=3
-        disp('Número no válido.')
-        f(k)=input('Opción escogida: ');
+        disp('NÃºmero no vÃ¡lido.')
+        f(k)=input('OpciÃ³n escogida: ');
     end
     %decision de los jugadores reales
     i=f(k);
-    %para que no escojan lo mismo más de dos veces seguidas
+    %para que no escojan lo mismo mÃ¡s de dos veces seguidas
     while d(k,i)==2
-       disp('No puedes escoger lo mismo más de dos veces seguidas.')
-       f(k)=input('Opción escogida: ');
+       disp('No puedes escoger lo mismo mÃ¡s de dos veces seguidas.')
+       f(k)=input('OpciÃ³n escogida: ');
        while f(k)~=1&f(k)~=2&f(k)~=3
-        disp('Número no válido.')
-        f(k)=input('Opción escogida: ');
+        disp('NÃºmero no vÃ¡lido.')
+        f(k)=input('OpciÃ³n escogida: ');
        end
        i=f(k);
     end
@@ -361,7 +305,7 @@ end
     n(k,i)=n(k,i)+1; 
  end
 
-%jugadores de máquina
+%jugadores de mÃ¡quina
 for k=1:M
     [p] = llamar_jugador(c(k),n);
     f(N+k)=p;
@@ -416,7 +360,7 @@ if cant>0 %ninguno ha llegado a 0
     for k=1:D
     disp(['Dinero de ',num2str(jug(k)),'= ',num2str(cant(k))])
     end
-    disp('Pero, como os dijimos, no ser egoísta tiene sus ventajas: ')
+    disp('Pero, como os dijimos, no ser egoÃ­sta tiene sus ventajas: ')
     for k=1:D
     cant(k)=cant(k)+(sum(cant)-cant(k))*n(k,1)/(2*D);
     disp(['Dinero final de ', num2str(jug(k)),'= ',num2str(cant(k))])
@@ -428,9 +372,9 @@ else %uno de ellos ha llegado a 0
     k=find(cant<=0);
      i=find(cant==max(cant)); %persona que ha ganado
     if numel(k)==1
-    disp(['Como ',num2str(jug(k)),' ha llegado a 0, todos perdéis :´('])
+    disp(['Como ',num2str(jug(k)),' ha llegado a 0, todos perdÃ©is :Â´('])
     else
-     disp(['Como muchos de vostoros habéis llegado a 0, todos perdéis :´('])   
+     disp(['Como muchos de vostoros habÃ©is llegado a 0, todos perdÃ©is :Â´('])   
     end
 end
 datos=n(1:N,:);
@@ -449,7 +393,7 @@ if N~=0
     jug2=jug(1:N);
 save -ascii -append nombres.dat jug2
 end
-%datos para sólo estrategias
+%datos para sÃ³lo estrategias
 %mapa
 for r=2:ronda %para las rondas
     figure('units','normalized','outerposition',[0,0,1,1],'Color',[.95 .9 .8]);
@@ -468,7 +412,7 @@ for r=2:ronda %para las rondas
                
                     lat=40;
                     lon=-13;
-                    textm(lat,lon,'España','Color','blue','FontSize',12)
+                    textm(lat,lon,'EspaÃ±a','Color','blue','FontSize',12)
                     textm(lat-6,lon+5,num2str(CANT(r,n)),'Color','red','FontSize',12)
                     textm(lat-11,lon+5,'\heartsuit','Color','red','FontSize',12)
               
@@ -513,7 +457,7 @@ for r=2:ronda %para las rondas
            
                     lat=-25;
                     lon=15;
-                    textm(lat,lon,'Sudáfrica','Color','blue','FontSize',12)
+                    textm(lat,lon,'SudÃ¡frica','Color','blue','FontSize',12)
                     textm(lat-6,lon+5,num2str(CANT(r,n)),'Color','red','FontSize',12)
                     textm(lat-11,lon+5,'\heartsuit','Color','red','FontSize',12)
            
@@ -546,7 +490,7 @@ yv=linspace(0,0);
 figure(11)
 plot(xv,yv)
 axis([0,G,0,G]);
-txt=["Gracias por vuestra participación";"Desarrolladores";"Esther Menéndez Ibáñez";"Diego A. Moreno Ramos"];
+txt=["Gracias por vuestra participaciÃ³n";"Desarrolladores";"Esther MenÃ©ndez IbÃ¡Ã±ez";"Diego A. Moreno Ramos"];
 text(30,n,txt,'FontSize', 20)
 pause(0.05)
 hold off
@@ -579,7 +523,7 @@ if c==8
 end
 end
 function [f] = Spain(a)
-%Se convocan elecciones cada día, no se toman decisiones.
+%Se convocan elecciones cada dÃ­a, no se toman decisiones.
 g=rand;
 if g<=(1/3)
     f=1;
@@ -592,7 +536,7 @@ if g>(2/3)
 end
 end
 function [f] = Estados_Unidos(a)
-% Los conflictos favorecen su economía.
+% Los conflictos favorecen su economÃ­a.
 h=rand;
 if h<=0.6
     f=3;
@@ -605,7 +549,7 @@ if h>0.9
 end
 end
 function [f] = Australia(a)
-% Defenderá sus intereses a toda costa, pero intentará no provocar
+% DefenderÃ¡ sus intereses a toda costa, pero intentarÃ¡ no provocar
 % conflictos.
 r=rand;
 if r<=(0.25)
@@ -619,7 +563,7 @@ if r>(0.75)
 end
 end
 function [f] = Rusia(a)
-%Proteccionista, ataques tácticos.
+%Proteccionista, ataques tÃ¡cticos.
 r=rand;
 if r<=(0.5)
     f=3;
@@ -632,7 +576,7 @@ if r>(0.85)
 end
 end
 function [f] = China(a)
-%Extremadamente belicoso, dispara primero pregunta después.
+%Extremadamente belicoso, dispara primero pregunta despuÃ©s.
 r=rand;
 if r<=(0.8)
     f=3;
@@ -646,7 +590,7 @@ if r>(0.9)
 end
 end
 function [f] = Sudafrica(a)
-%Comercio fuerte, intentará evitar el conflicto.
+%Comercio fuerte, intentarÃ¡ evitar el conflicto.
 g=rand;
 if g<=0.8
     f=1;
@@ -673,7 +617,7 @@ if g>0.9
 end
 end
 function [f] = Alemania(a)
-%Atacará moderadamente.
+%AtacarÃ¡ moderadamente.
 r=rand;
 if r<=(0.4)
     f=3;
